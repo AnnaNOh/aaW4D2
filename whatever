@@ -1,0 +1,8 @@
+<% Cat::COLORS.each do |color| %>
+  <option value=<%=color%> <%= @cat.color == color ? "selected" : "" %>> <%color%> </option>
+    <%#= @cat.color == "brown" ? "selected" : "" %>
+<% end %>
+
+<option value="black"<%#= @cat.color == "black" ? "selected" : "" %>>black</option>
+<option value="orange"<%#= @cat.color == "orange" ? "selected" : "" %>>orange</option>
+<option value="gray"<%#= @cat.color == "gray" ? "selected" : "" %>>gray</option>
